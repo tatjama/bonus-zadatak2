@@ -1,6 +1,6 @@
 :root{
-    --gradient-violet: hsl(273, 75%, 66%);
-    --gradient-blue: hsl(240, 73%, 65%);
+    --background-violet: hsl(273, 75%, 66%);
+    --background-blue: hsl(240, 73%, 65%);
     --text-blue: hsl(237, 12%, 33%);
     --text-light-blue: hsl(240, 6%, 50%);
     --text-dark-blue: hsl(238, 29%, 16%);
@@ -18,4 +18,53 @@ html, body, .container {
     font-size: 12px;
     font-weight: 400;
     overflow: hidden;
+}
+.container{    
+    background-image: linear-gradient(var(--background-violet), var(--background-blue));
+}
+.faq-section{
+    width: 920px;
+    height: 509px;
+    margin: 129px auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+.item{
+    width: 50%;
+    height: 100%;
+}
+/*Start Images Section*/
+.background-img-container{
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-position-x: -580px;
+    background-position-y: -290px;
+    background-repeat: no-repeat;
+}
+.background-img{
+    width: 385px;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    background-image: url(./images/illustration-woman-online-desktop.svg);
+    background-position-x: -90px;
+    background-position-y: 70px;
+    background-repeat: no-repeat;
+}
+.background-image{
+    position: relative;
+    top: 200px;
+    left: -100px;
+}
+/*End Images Container*/
+.list-container{
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
 }
