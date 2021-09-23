@@ -19,6 +19,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="attribution">Coded by 
+        <a href="https://my-react-portfolio-tatjana.vercel.app/" target="_blank">Tatjana Markovic</a>.
+      </div>
       <!--Start FAQ Section-->
       <section class="faq-container">
           <!--Start Image Container-->
@@ -32,7 +35,7 @@
             <!--Start List Container-->
             <section class="item list-container">
               <h1>FAQ</h1>
-              
+
               <ul class="list-group">              
                 <li class="list-item">
                     <p class="question" id = "question0">How many team members can I invite? 
@@ -85,34 +88,11 @@
       <!--End FAQ Section-->      
     </div>
 
-    <script type="text/javascript" >
-      const questions = document.querySelectorAll(".question");
-
-      Array.from(questions).forEach((question, id) => {  
-
-          question.addEventListener("click", (e) => {  
-            const active = document.getElementsByClassName("active");       
-            if(question.classList.value == "question active"){
-              Array.from(active).forEach((element)=>{
-              element.classList.remove("active");
-              });
-            }else{
-              Array.from(active).forEach((element)=>{
-              if(element) element.classList.remove("active");
-              })
-              document.querySelector("#question"+ id).classList.add("active");
-              document.querySelector("#answer"+ id).classList.add("active");
-              document.querySelector("#arrow"+ id).classList.add("active");
-
-          }
-      });
-
-    })
+    <script type="text/javascript" src="./index.js">
+      
     
     </script>
     
-    <!--<div class="attribution">Coded by 
-      <a href="https://my-react-portfolio-tatjana.vercel.app/" target="_blank">Tatjana Markovic</a>.
-    </div>-->
+    
   </body>
 </html>
