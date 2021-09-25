@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="icon"
       type="image/png"
@@ -14,28 +16,83 @@
 
     <title>FAQ Accordion Card</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
   </head>
   <body>
-    <!--
-    How many team members can I invite?
-    You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-    --------------------------
-    What is the maximum file upload size? No more than 2GB.
-    All files in your account must fit your allotted storage space.
-    --------------------------
-    How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your
-    profile page. A reset link will be emailed to you.
-    ---------------------------
-    Can I cancel my subscription?
-    Yes! Send us a message and we’ll process your request no
-    questions asked.
-    ---------------------------
-    Do you provide additional support?
-    Chat and email support is available 24/7. Phone lines are open during normal business hours.
-  -->
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+    <div class="container">
+      <div class="attribution">Coded by 
+        <a href="https://my-react-portfolio-tatjana.vercel.app/" target="_blank">Tatjana Markovic</a>.
+      </div>
+      <!--Start FAQ Section-->
+      <section class="faq-container">
+          <!--Start Image Container-->
+            <div class="faq-section">
+            <div class="item">
+              <div class=" background-img-container">
+                <img class="background-img" src="./images/illustration-box-desktop.svg">
+              </div>
+            </div>
+            <!--End Image Container-->
+            <!--Start List Container-->
+            <section class="item list-container">
+              <h1>FAQ</h1>
+
+              <ul class="list-group">              
+                <li class="list-item">
+                    <p class="question" id = "question0">How many team members can I invite? 
+                      <img class="list-arrow" id = "arrow0" src="./images/icon-arrow-down.svg" alt="arrow down" />
+                    </p>
+                  <p class="answer" id = "answer0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  </p> 
+                </li>
+                <li class="list-item">
+                  <p class="question" id = "question1">What is the maximum file upload size?
+                    <img class="list-arrow" id = "arrow1" src="./images/icon-arrow-down.svg" alt="arrow down" />
+                  </p>
+                  <p class="answer" id = "answer1">
+                    No more than 2GB. All files in your account must fit your allotted storage space.
+                  </p>
+                </li>
+                <li class="list-item">                
+                  <p class="question" id = "question2">How do I reset my password?
+                    <img class="list-arrow" id = "arrow2" src="./images/icon-arrow-down.svg" alt="arrow down" />
+                  </p>
+                  <p class="answer" id = "answer2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quasi omnis sunt. 
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="question" id = "question3">Can I cancel my subscription?
+                    <img class="list-arrow" id = "arrow3" src="./images/icon-arrow-down.svg" alt="arrow down" />
+                  </p>
+                  <p class="answer" id = "answer3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quasi omnis sunt. 
+                    Et, optio nesciunt! 
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="question" id = "question4">Do you provide additional support?
+                    <img class="list-arrow" id = "arrow4" src="./images/icon-arrow-down.svg" alt="arrow down" />
+                  </p>
+                  <p class="answer " id = "answer4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quasi omnis sunt. 
+                    Et, optio nesciunt! Non earum deleniti, cumque atque delectus 
+                  </p>
+                </li>
+              </ul>
+
+            </section>
+            <!--End List Container-->
+          </div>
+      </section>
+      <!--End FAQ Section-->      
+    </div>
+
+    <script type="text/javascript" src="./index.js">
+      
+    
+    </script>
+    
+    
   </body>
 </html>
